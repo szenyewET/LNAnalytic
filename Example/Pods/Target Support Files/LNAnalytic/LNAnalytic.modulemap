@@ -1,0 +1,6 @@
+framework module LNAnalytic {
+  umbrella header "LNAnalytic-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "LNAnalytic",
+  "version": "0.1.0",
+  "summary": "A short description of LNAnalytic.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/139732001/LNAnalytic",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "139732001": "szenyewedgetech@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/139732001/LNAnalytic.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "LNAnalytic/Classes/**/*"
+}

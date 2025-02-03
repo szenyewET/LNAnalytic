@@ -1,0 +1,16 @@
+PODS:
+  - LNAnalytic (0.1.0)
+
+DEPENDENCIES:
+  - LNAnalytic (from `../`)
+
+EXTERNAL SOURCES:
+  LNAnalytic:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LNAnalytic: 0ba38ce1503143f1ea725221c695c7f8f7c902f9
+
+PODFILE CHECKSUM: 2cca15e4f5994c39e386d31ae6ead5431b96e0bd
+
+COCOAPODS: 1.16.2

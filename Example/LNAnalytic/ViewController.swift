@@ -7,17 +7,32 @@
 //
 
 import UIKit
+import LNAnalytic
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        addBtnView()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func addBtnView(){
+        let btn = UIButton(type: .custom)
+        btn.setTitle("log event", for: .normal)
+        btn.backgroundColor = .blue
+        
+        btn.addTarget(nil, action: #selector(logEvent), for: .touchUpInside)
+        btn.frame = .init(x: view.frame.midX, y: view.frame.midY, width: 150, height: 50)
+        self.view.addSubview(btn)
+    }
+    
+    @objc func logEvent() {
+        LNAnalyticManager.logEvent()
     }
 
 }

@@ -1,0 +1,6 @@
+framework module Pods_LNAnalytic_Example {
+  umbrella header "Pods-LNAnalytic_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
