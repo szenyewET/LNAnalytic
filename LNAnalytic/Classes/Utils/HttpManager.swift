@@ -14,6 +14,10 @@ class HttpManager {
     
     private init() {}
     
+    func callAPI(){
+        print("call API")
+    }
+    
     // MARK: - GET Request
     func get<T: Decodable>(url: URL, completion: @escaping (Result<T, Error>) -> Void) {
         var request = URLRequest(url: url)

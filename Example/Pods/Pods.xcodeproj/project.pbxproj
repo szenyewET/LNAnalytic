@@ -12,7 +12,8 @@
 		2BEAF95638D8B0EADB23FA87CD2FCDC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		2CD7C53D5CB1CF1C2875A5EFF849BC31 /* Pods-LNAnalytic_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA4E7F980BC19C5985EEE0136E03690 /* Pods-LNAnalytic_Example-dummy.m */; };
 		397EF36DAC55C14B6D5F9715D92534CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		56899C532D50611400C96725 /* LNAnalytic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56899C512D50607C00C96725 /* LNAnalytic.swift */; };
+		56899C672D5067FF00C96725 /* LNAnalytic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56899C662D5067FF00C96725 /* LNAnalytic.swift */; };
+		56899C6A2D50680F00C96725 /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56899C682D50680F00C96725 /* HttpManager.swift */; };
 		69CEB0C23E8938846C39FB654CD48157 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
 		B09BC0A56C782C8C12F684AE5AA95BAD /* Pods-LNAnalytic_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07DCDB74D357493F705A3BBB8D5159B0 /* Pods-LNAnalytic_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE4DAAF3E1721E5BAB2DE13780D671D7 /* Pods-LNAnalytic_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D9D948B4281D41203D9E0C6BF9FEF99 /* Pods-LNAnalytic_Tests-dummy.m */; };
@@ -46,7 +47,8 @@
 		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		41853DC276CE70C6970482DB7D71712E /* Pods_LNAnalytic_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNAnalytic_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49E01322A6C6440FC7AB4309B152B1F7 /* Pods-LNAnalytic_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LNAnalytic_Tests-Info.plist"; sourceTree = "<group>"; };
-		56899C512D50607C00C96725 /* LNAnalytic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LNAnalytic.swift; sourceTree = "<group>"; };
+		56899C662D5067FF00C96725 /* LNAnalytic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LNAnalytic.swift; path = LNAnalytic/Classes/LNAnalytic.swift; sourceTree = "<group>"; };
+		56899C682D50680F00C96725 /* HttpManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
 		5E66697F5EB7CC0C3681D59AFE3591E3 /* Pods-LNAnalytic_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LNAnalytic_Example.release.xcconfig"; sourceTree = "<group>"; };
 		6293238A4BCB9EC66E76401E53F98CB3 /* Pods_LNAnalytic_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNAnalytic_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6461EE39C236879B1BCF1C6A81B79AF3 /* LNAnalytic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNAnalytic.debug.xcconfig; sourceTree = "<group>"; };
@@ -71,14 +73,6 @@
 		F7F7C2CD194A662FD3E0AC6DBAC97C3E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F86CD48E62D154D8AA021DC602D9538B /* LNAnalytic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNAnalytic-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		56899C4D2D50600700C96725 /* Utils */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Utils;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1DA244E1AE4FEB6FCFC7D940753C776F /* Frameworks */ = {
@@ -127,10 +121,10 @@
 		21DC5F27F3E769CBF7D55EF833EDFA61 /* LNAnalytic */ = {
 			isa = PBXGroup;
 			children = (
-				56899C4D2D50600700C96725 /* Utils */,
 				C1F6C4734F9F64B7A5AC0496C19C4D57 /* Pod */,
 				2B18C60C2E8775F8123C17A11ABD8BE8 /* Support Files */,
-				56899C512D50607C00C96725 /* LNAnalytic.swift */,
+				56899C662D5067FF00C96725 /* LNAnalytic.swift */,
+				56899C692D50680F00C96725 /* Utils */,
 			);
 			name = LNAnalytic;
 			path = ../..;
@@ -149,6 +143,15 @@
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/LNAnalytic";
+			sourceTree = "<group>";
+		};
+		56899C692D50680F00C96725 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				56899C682D50680F00C96725 /* HttpManager.swift */,
+			);
+			name = Utils;
+			path = LNAnalytic/Classes/Utils;
 			sourceTree = "<group>";
 		};
 		849FD6EC1AF699A69DB6741CDA093524 /* Products */ = {
@@ -313,9 +316,6 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				56899C4D2D50600700C96725 /* Utils */,
-			);
 			name = LNAnalytic;
 			productName = LNAnalytic;
 			productReference = 84E66BBACD789767DA781F195FF351FF /* LNAnalytic.framework */;
@@ -329,6 +329,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					F36F1E1E6B3A6F676CC82DED441BAAE8 = {
+						LastSwiftMigration = 1600;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			developmentRegion = en;
@@ -387,7 +392,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56899C532D50611400C96725 /* LNAnalytic.swift in Sources */,
+				56899C6A2D50680F00C96725 /* HttpManager.swift in Sources */,
+				56899C672D5067FF00C96725 /* LNAnalytic.swift in Sources */,
 				E6F866BCEC183D0AB761AEFAD13227B5 /* LNAnalytic-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6461EE39C236879B1BCF1C6A81B79AF3 /* LNAnalytic.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CURRENT_PROJECT_VERSION = 1;
@@ -489,6 +496,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -639,6 +647,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1165073F8706E16683659C8D6726F0D3 /* LNAnalytic.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CURRENT_PROJECT_VERSION = 1;

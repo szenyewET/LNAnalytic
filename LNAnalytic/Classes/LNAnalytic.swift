@@ -9,5 +9,6 @@ public class LNAnalyticManager {
     
     public static func logEvent(){
         print("log event")
+        HttpManager.shared.callAPI()
     }
 }
